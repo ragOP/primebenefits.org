@@ -10,6 +10,8 @@
  "source": "/engmed-ths-1",
         "destination": "/midnight.html"
         },
+
+        
            {
         "source": "/spanmedi1",
         "destination": "/sfmedi.html"
@@ -18,6 +20,11 @@
         "source": "/checknow",
         "destination": "/checknow.html"
        
+      },
+      {
+        "source":"./spanflex1",
+         "destination": "/spanflex1.html"
+
       },
            {
         "source": "/sfmedi-bg",
