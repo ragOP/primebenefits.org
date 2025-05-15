@@ -22,7 +22,7 @@
        
       },
       {
-        "source":"./spanflex1",
+        "source":"/spanflex1",
          "destination": "/spanflex1.html"
 
       },
