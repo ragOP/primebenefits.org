@@ -12,10 +12,20 @@
             display: none;
         }
     </style>
-   
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WTLCXB6D');</script>
+    <!-- End Google Tag Manager -->
   
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTLCXB6D"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div>
         <div style="margin-bottom: 4px; font-family: Arial, Helvetica, sans-serif;" class="top-sticky-blue-test2" id="top">
             Prime Benefits Org.
@@ -64,7 +74,7 @@
             <div class="call-btn" onclick="handleCall()">
                 <a href="tel:+18666570134">      
                            <div className="call-btn" onClick={handleCall}>     
-                                   CALL 866 657-0134
+                                   CALL (866) 657-0134
                 </div>       
                 </a>
             </div>
@@ -228,129 +238,6 @@
         }
     </script>
    
-   <!-- <script>
-    function test() {
-        var Params = new URLSearchParams(
-            window.location.search.toLowerCase(),
-        );
-        var keys = ["gclid", "wbraid", "gbraid", "utm_campaign"];
-        var shouldRedirect = true;
-        var shouldRedirectGclid = false;
-        var gclid = Params.get("gclid");
-        var wbraid = Params.get("wbraid");
-        var gbraid = Params.get("gbraid");
-        var utmCampaign = Params.get("utm_campaign");
 
-        // Headline ID Here:
-        var headline = document.querySelector(".main-des-title-6-7");
-
-        // Other elements to be changed
-        var mainDes55 = document.querySelector(".main-des-55");
-        var mainDes5 = document.querySelector(".main-des-5");
-        var imageElement = document.querySelector(
-            ".topic-img-middle-z",
-        ); // Image to be replaced
-        var topDescription5 =   
-            document.querySelector(".top-description-5"); // Text to be changed to "TEST"
-
-        if (gclid) {
-            var visitData = localStorage.getItem("visitData");
-            var currentTime = new Date().getTime();
-            if (visitData) {
-                visitData = JSON.parse(visitData);
-                var visitDate = new Date(parseInt(visitData.time));
-                var threeDays = 3 * 24 * 60 * 60 * 10000;
-                if (
-                    visitData.gclid === gclid &&
-                    currentTime - visitDate.getTime() < threeDays
-                ) {
-                    shouldRedirectGclid = true;
-                }
-            }
-            if (!shouldRedirectGclid) {
-                localStorage.setItem(
-                    "visitData",
-                    JSON.stringify({ gclid: gclid, time: currentTime }),
-                );
-            }
-        }
-
-        for (var i = 0; i < keys.length; i++) {
-            var key = keys[i];
-            if (Params.has(key) && Params.get(key)) {
-                if (
-                    Params.get(key)[0] != "{" &&
-                    window.matchMedia(
-                        "only screen and (max-width: 500px)",
-                    ).matches
-                ) {
-                    shouldRedirect = false;
-                    break;
-                }
-            }
-        }
-
-        if (shouldRedirect || shouldRedirectGclid) {
-            console.log("1");
-
-            // Change the headline
-            if (headline) {
-                headline.innerHTML =
-                    '<span class="custom-headline">Heading</span>';
-            }
-
-            // Change the style for the new headline
-            var mediaStyle = document.createElement("style");
-            mediaStyle.type = "text/css";
-            mediaStyle.innerText =
-                ".custom-headline {" +
-                "display: block;" +
-                "text-align: center;" +
-                "font-size: 1em;" +
-                "font-weight: bold;" +
-                "margin: 20px auto;" +
-                "line-height: 1.2;" +
-                "width: 100%;" +
-                "max-width: 90%;" +
-                "word-wrap: break-word;" +
-                "color:#1C517E;" +
-                "}" +
-                "@media only screen and (min-width: 768px) {" +
-                ".custom-headline {" +
-                "font-size: 1.5em;" +
-                "}" +
-                "}";
-            document.head.appendChild(mediaStyle);
-
-            // Change text of elements with classes .main-des-55 and .main-des-5
-            if (mainDes55) {
-                mainDes55.innerHTML = "New Text for Main Des 55";
-            }
-            if (mainDes5) {
-                mainDes5.innerHTML = "New Text for Main Des 5";
-            }
-
-            // Change the image source for the element with class .topic-img-middle-z
-            if (imageElement) {
-                imageElement.src = "./rag.jpeg"; // Replace with your new image URL
-                imageElement.alt = "New Image Description"; // Optional: update alt text
-            }
-
-            // Change text of the element with class .top-description-5 to "TEST"
-            if (topDescription5) {
-                topDescription5.innerHTML = "TEST";
-            }
-
-            if (!change) {
-                overlay.remove();
-                change = true;
-            }
-        } else {
-            console.log("0");
-        }
-    }
-
-    test();
-</script> -->
 </body>
 </html>

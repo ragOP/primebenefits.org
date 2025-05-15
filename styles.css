@@ -808,7 +808,7 @@ a{
     }
     .answer-btn-5{
       font-size: 1.2rem;
-      line-height: 2rem;
+      line-height: 2.5rem;
     }
     .checking{
       margin:1.25rem 1rem;
@@ -848,6 +848,8 @@ a{
   font-weight: bold;
   }
   .call-btn {
+    font-size: 1.5rem;
+    line-height: 2rem;
   -webkit-animation: glow 1.5s infinite alternate;
   animation: glow 1.5s infinite alternate;
  
